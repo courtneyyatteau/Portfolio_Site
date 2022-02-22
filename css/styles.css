@@ -4,28 +4,37 @@ Colors used
 Text Color (Dark Gray): #080404
 Background Color (powder (blue/green light): #e3f5ef
 Secondary Color (Dark coral): #b84e00
-Alternate Color (teal): #03565c
+Alternate Color (teal):#0d6e75
+Second-Alternate Color (olive): #545f15;
  */
+
+:root {
+  --primary-color: #080404;
+  --background-color: #e3f5ef;
+  --secondary-color: #b84e00;
+  --alternate-color: #0d6e75;
+  --second-alternate-color: #545f15;
+}
 
 * {
   box-sizing: border-box;
 }
 
 a {
-  color: #545f15;
+  color: var(--second-alternate-color);
   text-decoration: none;
 }
 
 a:visited {
   /* visited link */
-  color: #0d6e75;
+  color: var(--alternate-color);
 }
 
 a:hover,
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
-  color: #b84e00;
+  color: var(--secondary-color);
 }
 
 a.active {
@@ -53,8 +62,8 @@ a.active {
 }
 
 body {
-  background-color: #e3f5ef;
-  color: #080404;
+  background-color: var(--background-color);
+  color: var(--primary-color);
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -69,7 +78,7 @@ p .button {
   color: white;
   text-decoration: none;
   padding: 5px 9px;
-  border-radius: 3px;
+  border-radius: 12px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.3s opacity;
 }
@@ -160,7 +169,7 @@ h1 {
 h2 {
   font-size: 30px;
   font-weight: 700;
-  color: #b84e00;
+  color: var(--secondary-color);
   line-height: 0.5;
 }
 
