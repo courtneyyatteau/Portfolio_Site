@@ -161,7 +161,7 @@ input {
 /* Contact Form CSS end*/
 
 /* start grid fallback */
-.grid__item {
+.grid_item {
   display: inline-block;
   width: 50%;
 }
